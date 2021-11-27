@@ -19,13 +19,13 @@ $Feedbacks = getAllFeedbacks();
         <div id="content-wrap">
             <div class="header">
                 <!-- This is the Container just for the header. -->
-                <?php include_once 'includes/header.php'; ?>
+                <?php include_once __DIR__.'/includes/header.php'; ?>
                 <div class="header-left">
                     <!-- This is the Container just for the links. -->
-                    <?php include_once 'includes/links.php'; ?>
+                    <?php include_once __DIR__.'/includes/links.php'; ?>
                 </div>
             </div>
-            <h1>View FeedBacks</h1>
+            <h2>View FeedBacks</h2>
             <div class="leftSide lab">
                 <table id="KOKOTableDesign" cellspacing="0" width="50%">
                     <thead>
@@ -115,7 +115,7 @@ $Feedbacks = getAllFeedbacks();
             } ?>
         </div>
     </div>
-    <?php include_once 'includes/footer.php'; ?>
+    <?php include_once __DIR__.'/includes/footer.php'; ?>
 </body>
 
 </html>

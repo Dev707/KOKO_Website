@@ -12,9 +12,9 @@
     <div id="page-container">
         <div id="content-wrap">
             <div class="header">
-                <?php include_once 'includes/header.php'; ?>
+                <?php include_once __DIR__.'/includes/header.php'; ?>
                 <div class="header-left">
-                    <?php include_once 'includes/links.php'; ?>
+                    <?php include_once __DIR__.'/includes/links.php'; ?>
                 </div>
             </div>
             <h2>Colorful Macaw Parrots</h2>
@@ -23,7 +23,7 @@
             </div>
         </div>
     </div>
-    <?php include_once 'includes/footer.php'; ?>
+    <?php include_once __DIR__.'/includes/footer.php'; ?>
 </body>
 
 </html>

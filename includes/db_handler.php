@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set("Asia/Riyadh");
-$pdo = new PDO('mysql:host=localhost;port=3306;dbname=koko;charset=utf8', 'root', '');
+$pdo = new PDO('mysql:host=HOST;port=PORT;dbname=DBNAME;charset=utf8', 'UN', 'PW');
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 function newuser($fname, $lname, $phone, $email, $gender, $country, $city, $parrot, $subscribe)

@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/table.css" />
     <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
     <link rel="shortcut icon" type="image/png" href="images/icon.png" />
     <script src="js/email.js"></script>
 </head>
@@ -16,9 +15,9 @@
     <div id="page-container">
         <div id="content-wrap">
             <div class="header">
-                <?php include_once 'includes/header.php'; ?>
+                <?php include_once __DIR__.'/includes/header.php'; ?>
                 <div class="header-left">
-                    <?php include_once 'includes/links.php'; ?>
+                    <?php include_once __DIR__.'/includes/links.php'; ?>
                 </div>
             </div>
             <h2>Contact Us</h2>
@@ -53,7 +52,7 @@
         </div>
     </div>
 
-    <?php include_once 'includes/footer.php'; ?>
+    <?php include_once __DIR__.'/includes/footer.php'; ?>
 </body>
 <script>
     var emails = scrambleEmail();

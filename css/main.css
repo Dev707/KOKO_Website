@@ -114,7 +114,8 @@ a {
 }
 
 .fixed p,
-h1 {
+h1,
+h3 {
     text-align: center;
     word-wrap: break-word;
     padding: 15px;
@@ -184,11 +185,8 @@ body::-webkit-scrollbar-thumb {
 
 .buttons {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 27%;
+    margin: auto;
     height: 10%;
-    padding: 10px;
 }
 
 .intro {
@@ -286,22 +284,26 @@ label {
 .leftarrow {
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
+    width: 5%;
+    object-fit: contain;
     cursor: pointer;
 }
 
 .rightarrow {
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
+    object-fit: contain;
+    width: 5%;
     cursor: pointer;
 }
 
 .leftarrow:hover {
     background-color: rgb(25, 82, 42);
+    margin: auto;
 }
 
 .rightarrow:hover {
+    margin: auto;
     background-color: rgb(25, 82, 42);
 }
 
@@ -318,10 +320,7 @@ label {
 .thumbs li {
     height: 10%;
     width: 12%;
-    padding: 5px;
-    background-color: rgb(37 157 57);
     margin: 1%;
-    box-shadow: 1px 1px 5px 2px rgb(79, 121, 96);
     cursor: pointer;
 }
 
