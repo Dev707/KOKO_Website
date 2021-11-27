@@ -1,0 +1,16 @@
+li,
+p,
+h1,
+a,
+td,
+th,
+label,
+caption {
+    color: rgb(0, 0, 0);
+}
+
+.footer,
+.header,
+h2 {
+    display: none;
+}
