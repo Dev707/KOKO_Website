@@ -12,10 +12,10 @@ function newuser($fname, $lname, $phone, $email, $gender, $country, $city, $parr
     $statement->bindValue(':lastname', $lname);
     $statement->bindValue(':email', $email);
     $statement->bindValue(':pnumber', $phone);
-    $statement->bindValue(':country', $gender);
-    $statement->bindValue(':city', $country);
+    $statement->bindValue(':country', $country);
+    $statement->bindValue(':city', $city);
     $statement->bindValue(':parrot', $parrot);
-    $statement->bindValue(':gender', $city);
+    $statement->bindValue(':gender', $gender);
     $statement->bindValue(':subscribe', $subscribe);
     $statement->bindValue(':create_date', date('Y-m-d H:i:s'));
     $statement->execute();
