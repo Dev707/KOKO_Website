@@ -1,9 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <head>
     <title>KOKO - Gallery</title>
-    <script type="text/javascript" src="js/gallery.js"></script>
+    <script src="js/gallery.js"></script>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="shortcut icon" type="image/png" href="images/icon.png" />
 </head>

@@ -2,8 +2,8 @@
 $Feedbacks = getAllFeedbacks();
 
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -25,7 +25,7 @@ $Feedbacks = getAllFeedbacks();
             </div>
             <h2>View FeedBacks</h2>
             <div class="leftSide lab">
-                <table id="KOKOTableDesign" cellspacing="0" width="50%">
+                <table id="KOKOTableDesign">
                     <thead>
                         <tr>
                             <th>#</th>
@@ -57,7 +57,7 @@ $Feedbacks = getAllFeedbacks();
                 foreach ($Feedbacks as $i => $Feedback) {
                     if ($Feedback['email'] == $_POST['email']) { ?>
                         <div id="details" class="rightbar" style="padding:50px;">
-                            <table border="2" id="KOKOTableDesign">
+                            <table id="KOKOTableDesign">
                                 <caption>© KSG.sa</caption>
                                 <tr>
                                     <th colspan="2" style="text-align: center"><?php echo $Feedback["email"] ?></th>

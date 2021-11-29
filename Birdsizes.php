@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <head>
     <title>KOKO - Bird sizes</title>
@@ -20,7 +20,7 @@
             </div>
             <h2>Bird sizes</h2>
             <div class="rightbar">
-                <table border="2" id="KOKOTableDesign">
+                <table id="KOKOTableDesign">
                     <caption>© KSG.sa</caption>
                     <tr>
                         <th colspan="2" style="text-align: center">BIRD SIZES</th>
