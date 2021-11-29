@@ -3,7 +3,6 @@
 
 <head>
     <title>KOKO - HomePage</title>
-    <!--Css style-->
     <link rel="shortcut icon" type="image/png" href="images/icon.png" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
@@ -12,16 +11,14 @@
     <div id="page-container">
         <div id="content-wrap">
             <div class="header">
-                <!-- This is the Container just for the header. -->
-                <?php include_once __DIR__.'/includes/header.php'; ?>
+                <?php include_once 'includes/header.php'; ?>
                 <div class="header-left">
-                    <!-- This is the Container just for the links. -->
-                    <?php include_once __DIR__.'/includes/links.php'; ?>
+                    <?php include_once 'includes/links.php'; ?>
                 </div>
             </div>
             <div>
                 <h2>Parrots</h2>
-                <img src="images/pappagalli.jpg" class="imgcenter">
+                <img src="images/pappagalli.jpg" class="imgcenter" alt="KOKO intro"/>
                 <p class="intro">
                     Parrots, also known as psittacines are birds of the roughly 398 species in 92
                     genera comprising the order Psittaciformes found mostly in tropical and subtropical
@@ -48,15 +45,15 @@
                     </tr>
                     <tr>
                         <td>
-                            <p>Helping parrots survive in the wild,<br>
+                            <p>Helping parrots survive in the wild,<br/>
                                 and flourish in companion care</p>
                         </td>
                         <td>
-                            <p>Using science to take direct action<br>
+                            <p>Using science to take direct action<br/>
                                 to protect wild parrot populations</p>
                         </td>
                         <td>
-                            <p>Enhancing welfare and wellbeing through<br>
+                            <p>Enhancing welfare and wellbeing through<br/>
                                 education and outreach</p>
                         </td>
                     </tr>
@@ -64,7 +61,7 @@
             </div>
         </div>
     </div>
-    <?php include_once __DIR__.'/includes/footer.php'; ?>
+    <?php include_once 'includes/footer.php'; ?>
 </body>
 
 </html>

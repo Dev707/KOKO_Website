@@ -11,9 +11,9 @@
     <div id="page-container">
         <div id="content-wrap">
             <div class="header">
-                <?php include_once __DIR__.'/includes/header.php'; ?>
+                <?php include_once 'includes/header.php'; ?>
                 <div class="header-left">
-                    <?php include_once __DIR__.'/includes/links.php'; ?>
+                    <?php include_once 'includes/links.php'; ?>
                 </div>
             </div>
             <div class="rightbar">
@@ -49,7 +49,7 @@
             </div>
         </div>
     </div>
-    <?php include_once __DIR__.'/includes/footer.php'; ?>
+    <?php include_once 'includes/footer.php'; ?>
 </body>
 
 </html>

@@ -2,7 +2,6 @@
 <html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta charset="UTF-8">
     <title>KOKO - Gallery</title>
     <script type="text/javascript" src="js/gallery.js"></script>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
@@ -13,9 +12,9 @@
     <div id="page-container">
         <div id="content-wrap">
             <div class="header">
-                <?php include_once __DIR__.'/includes/header.php'; ?>
+                <?php include_once 'includes/header.php'; ?>
                 <div class="header-left">
-                    <?php include_once __DIR__.'/includes/links.php'; ?>
+                    <?php include_once 'includes/links.php'; ?>
                 </div>
             </div>
             <h2>Gallery</h2>
@@ -52,15 +51,15 @@
                 </li>
             </ul>
             <div class="buttons">
-                <img src="images/left.png" alt="Left Arrow" class="leftarrow" onclick="prevImg()">
+                <img src="images/left.png" alt="Left Arrow" class="leftarrow" onclick="prevImg()"/>
                 <div class="galleryImg">
                     <img id="imgblock" src="images/1.jpg" alt="Images" />
                 </div>
-                <img src="images/right.png" alt="Right Arrow" class="rightarrow" onclick="nextImg()">
+                <img src="images/right.png" alt="Right Arrow" class="rightarrow" onclick="nextImg()"/>
             </div>
         </div>
     </div>
-    <?php include_once __DIR__.'/includes/footer.php'; ?>
+    <?php include_once 'includes/footer.php'; ?>
 </body>
 
 </html>

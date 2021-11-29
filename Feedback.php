@@ -11,7 +11,7 @@ $parrot =  "";
 $title =  "";
 $message =  "";
 if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['submit'])) {
-    require_once __DIR__ . "/includes/db_handler.php";
+    require_once 'includes/db_handler.php';
     $errors = [];
     if (isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['phone']) && isset($_POST['email']) && isset($_POST['gender']) && isset($_POST['country']) && isset($_POST['city']) && isset($_POST['parrot']) && isset($_POST['title']) && isset($_POST['message'])) {
         if (!isset($_POST['policy'])) {
@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['submit'])) {
     <meta charset="UTF-8">
     <title>KOKO - Feedback</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <script src="js/validation.js"></script>
+    <script src="js/validation.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="css/form.css" />
     <link rel="shortcut icon" type="image/png" href="images/icon.png" />
 </head>
@@ -66,9 +66,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['submit'])) {
     <div id="page-container">
         <div id="content-wrap">
             <div class="header">
-                <?php include_once __DIR__.'/includes/header.php'; ?>
+                <?php include_once 'includes/header.php'; ?>
                 <div class="header-left">
-                    <?php include_once __DIR__.'/includes/links.php'; ?>
+                    <?php include_once 'includes/links.php'; ?>
                 </div>
             </div>
             <h2>Send us your experience</h2>
@@ -84,23 +84,23 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['submit'])) {
                     Thank you for Sharing us your Experience (:
                 </div>
             <?php } ?>
-            <form class="fromstyle" onsubmit="return validate(event)" name="myForm" method="POST" style="padding: 50px;">
+            <form class="KOKOformstyle" onsubmit="return validate(event)" method="post" style="padding: 50px;">
                 <div style="width: 50%; margin-left:auto; margin-right: auto;">
                     <label for="firstname">First Name <span>*</span></label>
-                    <input type="text" name="firstname" placeholder="For example: Khalid" value="<?php echo $fname ?>" required>
+                    <input type="text" name="firstname" placeholder="For example: Khalid" value="<?php echo $fname ?>" required/>
                     <label for="lastname">Last Name <span>*</span></label>
-                    <input type="text" name="lastname" placeholder="For example: Alghamdi" value="<?php echo $lname ?>" required>
+                    <input type="text" name="lastname" placeholder="For example: Alghamdi" value="<?php echo $lname ?>" required/>
                     <label for="phoneField">Phone Number <span>*</span></label>
                     <label for="error" id="phoneError" hidden><span>Wrong phone number</span></label>
-                    <input type="text" name="phone" placeholder="For example: 055555555" value="<?php echo $phone ?>" required>
+                    <input type="text" name="phone" placeholder="For example: 055555555" value="<?php echo $phone ?>" required/>
                     <label for="emailField">Email <span>*</span></label>
                     <label for="error" id="emailerrormessagevalidate" hidden><span>Wrong email format</span></label>
-                    <input type="text" name="email" placeholder="For example: Apple@ksg.sa" value="<?php echo $email ?>" required>
+                    <input type="text" name="email" placeholder="For example: Apple@ksg.sa" value="<?php echo $email ?>" required/>
                     <div class="radio">
-                        <label for="gender">Gender</label><br><br>
-                        <input type="radio" name="gender" id="male" value="male" checked>
+                        <label for="gender">Gender</label><br/><br/>
+                        <input type="radio" name="gender" id="male" value="male" checked/>
                         <label for="male" id="malefemaleLabel">Male</label>
-                        <input type="radio" name="gender" id="female" value="female">
+                        <input type="radio" name="gender" id="female" value="female"/>
                         <label for="female" id="femalefemaleLabel">Female</label>
                     </div>
                     <label for="country">Country</label>
@@ -112,7 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['submit'])) {
                         <option value="Andorra">Andorra</option>
                         <option value="Angola">Angola</option>
                         <option value="Anguilla">Anguilla</option>
-                        <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+                        <option value="Antigua &amp; Barbuda">Antigua &amp; Barbuda</option>
                         <option value="Argentina">Argentina</option>
                         <option value="Armenia">Armenia</option>
                         <option value="Aruba">Aruba</option>
@@ -131,7 +131,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['submit'])) {
                         <option value="Bhutan">Bhutan</option>
                         <option value="Bolivia">Bolivia</option>
                         <option value="Bonaire">Bonaire</option>
-                        <option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
+                        <option value="Bosnia &amp; Herzegovina">Bosnia &amp; Herzegovina</option>
                         <option value="Botswana">Botswana</option>
                         <option value="Brazil">Brazil</option>
                         <option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
@@ -293,13 +293,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['submit'])) {
                         <option value="St Kitts-Nevis">St Kitts-Nevis</option>
                         <option value="St Lucia">St Lucia</option>
                         <option value="St Maarten">St Maarten</option>
-                        <option value="St Pierre & Miquelon">St Pierre & Miquelon</option>
-                        <option value="St Vincent & Grenadines">St Vincent & Grenadines</option>
+                        <option value="St Pierre &amp; Miquelon">St Pierre &amp; Miquelon</option>
+                        <option value="St Vincent &amp; Grenadines">St Vincent &amp; Grenadines</option>
                         <option value="Saipan">Saipan</option>
                         <option value="Samoa">Samoa</option>
                         <option value="Samoa American">Samoa American</option>
                         <option value="San Marino">San Marino</option>
-                        <option value="Sao Tome & Principe">Sao Tome & Principe</option>
+                        <option value="Sao Tome &amp; Principe">Sao Tome &amp; Principe</option>
                         <option value="Saudi Arabia">Saudi Arabia</option>
                         <option value="Senegal">Senegal</option>
                         <option value="Seychelles">Seychelles</option>
@@ -326,11 +326,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['submit'])) {
                         <option value="Togo">Togo</option>
                         <option value="Tokelau">Tokelau</option>
                         <option value="Tonga">Tonga</option>
-                        <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+                        <option value="Trinidad &amp; Tobago">Trinidad &amp; Tobago</option>
                         <option value="Tunisia">Tunisia</option>
                         <option value="Turkey">Turkey</option>
                         <option value="Turkmenistan">Turkmenistan</option>
-                        <option value="Turks & Caicos Is">Turks & Caicos Is</option>
+                        <option value="Turks &amp; Caicos Is">Turks &amp; Caicos Is</option>
                         <option value="Tuvalu">Tuvalu</option>
                         <option value="Uganda">Uganda</option>
                         <option value="United Kingdom">United Kingdom</option>
@@ -346,14 +346,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['submit'])) {
                         <option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
                         <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
                         <option value="Wake Island">Wake Island</option>
-                        <option value="Wallis & Futana Is">Wallis & Futana Is</option>
+                        <option value="Wallis &amp; Futana Is">Wallis &amp; Futana Is</option>
                         <option value="Yemen">Yemen</option>
                         <option value="Zaire">Zaire</option>
                         <option value="Zambia">Zambia</option>
                         <option value="Zimbabwe">Zimbabwe</option>
                     </select>
                     <label for="City">City <span>*</span></label>
-                    <input type="text" name="city" placeholder="For example: Jeddah" value="<?php echo $city ?>" required>
+                    <input type="text" name="city" placeholder="For example: Jeddah" value="<?php echo $city ?>" required/>
                     <label for="parrot">Your favoret parrot</label>
                     <select id="parrot" name="parrot">
                         <option value="African greys">African greys</option>
@@ -377,19 +377,19 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['submit'])) {
                         <option value="Macaws">Macaws</option>
                     </select>
                     <label for="title">Title <span>*</span></label>
-                    <input type="text" id="title" name="title" placeholder="Enter the Title.." value="<?php echo $title ?>" required>
+                    <input type="text" id="title" name="title" placeholder="Enter the Title.." value="<?php echo $title ?>" required/>
                     <label for="message">Message <span>*</span></label>
                     <textarea id="message" name="message" placeholder="Enter the Message.." required><?php echo $message ?></textarea>
-                    <input type="checkbox" name="subscribe">
-                    <label for="checbox">Check to subscribe to our newsletter</label><br><br>
-                    <input type="checkbox" name="policy" checked>
-                    <label for="checbox">I agree to the<a href="PrivacyPolicy.php" target="_blank" style="color: red;">Privacy Policy</a></label><br><br>
-                    <input type="submit" value="Submit" name="submit">
+                    <input type="checkbox" name="subscribe"/>
+                    <label for="checbox">Check to subscribe to our newsletter</label><br/><br/>
+                    <input type="checkbox" name="policy" checked/>
+                    <label for="checbox">I agree to the<a href="PrivacyPolicy.php" target="_blank" style="color: red;">Privacy Policy</a></label><br/><br/>
+                    <input type="submit" value="Submit" name="submit"/>
                 </div>
             </form>
         </div>
     </div>
-    <?php include_once __DIR__.'/includes/footer.php'; ?>
+    <?php include_once 'includes/footer.php'; ?>
 </body>
 
 </html>

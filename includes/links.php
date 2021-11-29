@@ -16,11 +16,7 @@ foreach ($links as $key => $link) {
     if ($_SERVER["PHP_SELF"] == "/" . $link) {
         $var = "<a style='background-color:#174e19;' href='$link'>$key</a>";
     } else {
-        if ($key == "Blog") {
-            $var = "<a target='_blank' href='$link'>$key</a>";
-        } else {
-            $var = "<a href='$link'>$key</a>";
-        }
+        $var = "<a href='$link'>$key</a>";
     }
     echo $var;
 }

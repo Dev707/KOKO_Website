@@ -1,4 +1,4 @@
-<?php require_once __DIR__ . "/includes/db_handler.php";
+<?php require_once "includes/db_handler.php";
 $Feedbacks = getAllFeedbacks();
 
 ?>
@@ -18,11 +18,9 @@ $Feedbacks = getAllFeedbacks();
     <div id="page-container">
         <div id="content-wrap">
             <div class="header">
-                <!-- This is the Container just for the header. -->
-                <?php include_once __DIR__.'/includes/header.php'; ?>
+                <?php include_once 'includes/header.php'; ?>
                 <div class="header-left">
-                    <!-- This is the Container just for the links. -->
-                    <?php include_once __DIR__.'/includes/links.php'; ?>
+                    <?php include_once 'includes/links.php'; ?>
                 </div>
             </div>
             <h2>View FeedBacks</h2>
@@ -47,7 +45,7 @@ $Feedbacks = getAllFeedbacks();
                                 <td><?php echo $Feedback["email"]; ?></td>
                                 <td><?php echo date(' Y/m/d h:i a', strtotime($Feedback['create_date'])) ?></td>
                                 <td class="text-center">
-                                    <form class="fromstyle" name="myForm" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>#details"><input type="hidden" value="<?php echo $Feedback["email"] ?>" name="email"><input type="submit" value="Show details" name="submit"></form>
+                                    <form class="KOKOformstyle" name="KOKOForm" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>#details"><input type="hidden" value="<?php echo $Feedback["email"] ?>" name="email"><input type="submit" value="Show details" name="submit"></form>
                                 </td>
                             </tr>
                         <?php
@@ -115,7 +113,7 @@ $Feedbacks = getAllFeedbacks();
             } ?>
         </div>
     </div>
-    <?php include_once __DIR__.'/includes/footer.php'; ?>
+    <?php include_once 'includes/footer.php'; ?>
 </body>
 
 </html>

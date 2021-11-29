@@ -1,6 +1,6 @@
 function validate(e) {
     var regex = RegExp(/^[\w\d\W]+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/);
-    var form = document.forms['myForm'];
+    var form = document.forms['KOKOForm'];
 
     var email = form['email'];
     if (regex.test(email.value)) {

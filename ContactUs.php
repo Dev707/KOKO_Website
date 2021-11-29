@@ -8,16 +8,16 @@
     <link rel="stylesheet" type="text/css" href="css/table.css" />
     <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
     <link rel="shortcut icon" type="image/png" href="images/icon.png" />
-    <script src="js/email.js"></script>
+    <script src="js/email.js" type="text/javascript"></script>
 </head>
 
 <body>
     <div id="page-container">
         <div id="content-wrap">
             <div class="header">
-                <?php include_once __DIR__.'/includes/header.php'; ?>
+                <?php include_once 'includes/header.php'; ?>
                 <div class="header-left">
-                    <?php include_once __DIR__.'/includes/links.php'; ?>
+                    <?php include_once 'includes/links.php'; ?>
                 </div>
             </div>
             <h2>Contact Us</h2>
@@ -52,7 +52,7 @@
         </div>
     </div>
 
-    <?php include_once __DIR__.'/includes/footer.php'; ?>
+    <?php include_once 'includes/footer.php'; ?>
 </body>
 <script>
     var emails = scrambleEmail();
