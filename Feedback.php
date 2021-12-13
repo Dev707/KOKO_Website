@@ -84,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['submit'])) {
                     Thank you for Sharing us your Experience (:
                 </div>
             <?php } ?>
-            <form class="KOKOformstyle" onsubmit="return validate(event)" method="post" style="padding: 50px;">
+            <form id="KOKOForm" class="KOKOformstyle" onsubmit="return validate(event)" method="post" style="padding: 50px;">
                 <div style="width: 50%; margin-left:auto; margin-right: auto;">
                     <label for="firstname">First Name <span>*</span></label>
                     <input type="text" name="firstname" placeholder="For example: Khalid" value="<?php echo $fname ?>" required/>
